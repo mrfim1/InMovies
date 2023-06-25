@@ -6,17 +6,242 @@
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.DashboardFragment">
 
-    <TextView
-        android:id="@+id/text_dashboard"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="85dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="20dp"
+                android:background="#0C64E8"
+                android:text="Фильм" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="86dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:background="#00FFFFFF"
+                android:text="Сериал" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="89dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:background="#00FFFFFF"
+                android:text="мульт" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="89dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:background="#00225C6E"
+                android:text="аниме" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Жанр"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Фантастика" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Фэнтези" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="33dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="20dp"
+                android:background="#0C64E8"
+                android:text="+" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="376dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Год "
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:max="2023"
+            android:min="1950"
+            android:progress="1999"
+            android:progressTint="#0C64E7" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="376dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Рейтинг "
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:max="10"
+            android:min="0"
+            android:progress="6"
+            android:progressTint="#0C64E7" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Страна"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="США" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Нидерланды" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="33dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="20dp"
+                android:background="#0C64E8"
+                android:text="+" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="346dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Случайный фильм"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="41dp"
+                android:layout_height="32dp"
+                android:clickable="false"
+                android:src="@drawable/check" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="115dp"
+                android:layout_height="35dp"
+                android:background="#000C64E7"
+                android:text="Сбросить" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="9dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="#0C64E7"
+                android:text="Показать результаты" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
